@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML-PRESENTATION</title>
+
+		<meta name="description" content="AJAX">
+		<meta name="author" content="Zeena">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="html.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="IMG/download.png" class="img-circle" alt="Cinque Terre" width="150" height="150">
+					<h1>HTML</h1>
+					<h3>grunderna i html</h3>
+					<p>
+						<small>Presentation av <a href="#">Zeena Elia</a> and <a href="">Github</a></small>
+					</p>
+				</section>
+
+			
+				<!-- om html -->
+					<section>
+						<h2>om html</h2>
+						<p>
+							HTML är en förkortning för HyperTet Markup Language (HTML) det språk man skriver webbsidor i. Hypertet är tet med hyperlänkar, länkar som för dig till andra webbsidor när du klickar på dem. "Markup" syfftar på att man tar vanlig oformaterad text och märker de olika delarna i texten så att webbläsaren vet vad det är för typ av text. Man märker till exempel ut vad som är rubriker, var stycken börjar och slutar och vad som är sidans titel.
+						</p>
+					</section>
+					
+	
+				<!--Taggar och teckenkoder-->
+				<section>
+					<section>
+						<h2>Taggar och teckenkoder</h2>
+						<P class="p1">
+							Många taggar används i par för att märka delar av en text. Om man läser från vänster till höger kan man säga att den första taggen "slår på" en egenskap hos texten och den andra taggen, sluttaggen, "stänger av" egenskapen igen. De två taggarna är likadana, förutom att sluttaggen har ett snedstreck före nyckelordet. Det som står mellan start- och sluttaggen kallas för taggens innehåll. Taggarna och innehållet tillsammans kallas för ett element.
+						</P>
+						
+					</section>
+					<section class="p1">
+						<p class="p1">
+							Här är ett stycke text från ett HTML-dokument: <br>
+							<span style="color:red;">&lt;p&gt;</span>Det kan ibland vara knepigt att skriva exempel som inte har svenska tecken<span style="color:red;">&lt;p&gt;</span>
+						</p>
+						<p class="p1">Exempel består bara av text och taggar. Taggar börjar med teckent "mindre än" (<) och slutar med tecknet "större än" (>).Däremellan finns ett nyckelord som berättar vilken typ av tagg det är, och ibland också annan information. </p>
+					</section>
+					<section>
+						<h2>Tomma taggar</h2>
+						<p class="p1">
+							Taggar som inte innehåller något kallas för tomma taggar. Ett exempel är taggen <span style="color:red;">&lt;br&gt;</span>, som ger en radbrytning. I HTML anger man tomma taggar som en starttagg utan sluttag, så här: <br>
+							Så här kan man <span style="color:red;">&lt;br&gt;</span> dela upp en rad i HTML
+						</p>
+					</section>
+					<section>
+						<h2>Attribut och deras värden</h2>
+						<p class="p1">
+							För att göra taggar flexiblare använder man också attribut. Ett attribut är helt enkelt ett nyckelord som står efter namnet i öppningstaggen och är helt enkelt ett nyckelord som står efter namnet i öppningstaggen och som anger att taggen ska ha en viss egenskap. Ett attribut heter till exempel hidden. Om en tagg har det attrbutet så visas den inte av webbläsaren:<br>
+							<span style="color:red;">&lt;p&gt;</span> Nästa stycke syns inte <span style="color:red;">&lt;/p&gt;</span><br>
+							<span style="color:red;">&lt;p hidden&gt;</span> Eller hur?<span style="color:red;">&lt;/p&gt;</span><br>
+							<span style="color:red;">&lt;p&gt;</span>Såg du något?<span style="color:red;">&lt;/&gt;</span>
+						</p>
+					</section>
+					<section>
+						<p class="p1">
+							Man använder bara attribut i öppningstaggar. Ett attribut följs oftast av ett likhetstecken. En tagg med ett attribut och tillhörande värde har alltså följande struktur:<br>
+							Starttagg: <span style="color:red;">&lt;namn attribut=värde&gt;</span><br>
+							sluttagg: <span style="color:red;">&lt;/namn&gt;</span> <br>
+							<p class="p1">
+								Det kan finnas flera attribut i en enda tagg. De skriver då med mellanslag mellan varje attribut.
+						    </p>
+						</p>
+					</section>
+				</section>
+				
+				
+				<!-- Ett HTML -dokuments beståndsdelar -->
+				<section>
+					<section data-background="#dddddd">
+						<h2>Ett HTML -dokuments beståndsdelar</h2>
+						<p class="p1">
+							HTML-dokument består av ett huvud och en "kropp", I huvudet på ett HTML-dokument står det till exempel vad dokumentet heter och i kroppen finns sidans egentliga innehåll. Innehållet i Kroppen kan sedan i sin tur vara indelat på olika sätt. En vanlig text kan till exempel bestå av rubriker och stycken med brödtext. 
+						</p>
+					</section>
+					<section data-markdown>
+						
+						<script type="text/template">
+<p class="p1">För att se hur det fungerar rent praktiskt ska vi titta på ett exempel. Det se ut så här:</p>
+								
+		<!doctype html>
+		<html>
+		<head>
+		<titel>Ett litet exempel</titel>
+		</head>
+		<body>
+			<h1>En huvudrubrik</h1>
+			<p>lite vanlig tet.</p>
+			
+			<h2>En underrubrik</h2>
+			<p>Mer text ,,,,,,.</p>
+		</body>
+		</html>
+								
+							
+						</script>
+							
+					</section>
+					<section>
+						<p class="p1">
+							Om vi inte skiljer på start och sluttaggar finns det sju olika taggar i det här exempelet:<br><br>
+							
+							1.  <span style="color:red;">&lt;html&gt;</span>: Taggen <span style="color:red;">&lt;html&gt;</span> betyder helt enkelt att det som följer är HTML-dokument. Sist i dokumentet skriver man sluttaggen <span style="color:red;">&lt;/html&gt;</span><br>
+								
+							2. <span style="color:red;">&lt;head&gt;</span>: Den andra taggen i exemplet är<span style="color:red;">&lt;head&gt;</span>, som markerar början på dokumenthuvudet. Huvuden i HTML-dokument brukar inte innehålla så mycket, och i vårt exempel är sidans titel det enda som finns i huvudet. dokummenthuvudet avslutas med sluttaggen <span style="color:red;">&lt;/head&gt;</span>
+								
+							
+						</p>
+					</section>
+					<section>
+						<p class="p1">
+							3. <span style="color:red;">&lt;title&gt;</span>: <span style="color:red;">&lt;title&gt;</span> och dess sluttagg<span style="color:red;">&lt;/title&gt;</span> används för att markera dokimentets title. Alla HTML-dokument måste innehålla en title, men man får inte ha mer än en title på dokumentet. man får inte heller använda andra taggar inuti  <span style="color:red;">&lt;title&gt;</span>, men det går bra att använda teckenkoder.<br>
+							4. <span style="color:red;">&lt;body&gt;</span>: Mellan <span style="color:red;">&lt;body&gt;</span> och <span style="color:red;">&lt;/body&gt;</span> finns dokumentets kropp, alltså själva innehållet i webbsidan. I kroppen ligger allt det man villl visa: text, rubriker, listpr och tabeller, referensr till bilder, ljud och andra data samt  hyperlänkar till andra dokument.<br>
+						</p>
+					</section>
+					<section>
+						<p class="p1">
+							5. <span style="color:red;">&lt;h1&gt;</span> till<span style="color:red;">&lt;h2&gt;</span>: Taggarna <span style="color:red;">&lt;h1&gt;</span>, <span style="color:red;">&lt;h2&gt;</span>, <span style="color:red;">&lt;h3&gt;</span>, <span style="color:red;">&lt;h4&gt;</span>, <span style="color:red;">&lt;h5&gt;</span>, <span style="color:red;">&lt;h6&gt;</span>. Samt deras sluttaggar används för att markera rubriker. <span style="color:red;">&lt;h1&gt;</span> är den största rubriken och <span style="color:red;">&lt;h6&gt;</span> är den minsta.<br>
+							6. <span style="color:red;">&lt;p&gt;</span>: Till sist har vi den vanligaste taggen i HTML-dokument. <span style="color:red;">&lt;p&gt;</span> och <span style="color:red;">&lt;/p&gt;</span> omger ett stycke med vanlig text. Webbläsare struntar nämligen normalt i radbrytningar och tomma rader i HTML-dokument och gör sina egna radbbrytningar så att texten passar det fönster den visas i. Man använder i stället taggen <span style="color:red;">&lt;p&gt;</span> för att berätta var styckegränserna går. I vårt exempel har vi två stycken.
+						</p>
+					</section>
+			</section>
+				
+
+			<!-- Logiska formattaggar -->
+			<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+				<section>
+					<h2>Logiska formattaggar</h2>
+					<p class="p1">Logiska formattaggar som används för att ange struktur på delar av meningar:<br>
+						
+						1. <span style="color:blue;">&lt;em&gt;</span> och <span style="color:blue;">&lt;/em&gt;</span>: Taggen används för betonad text. De flesta webbläsare visar betonad text med kursiv stil.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <em>meningen</em> med meningen jag menar.</p>
+						</code></pre>
+						
+					</p>
+				</section>
+				<section>
+					<p class="p1">
+						2. <span style="color:blue;">&lt;strong&gt;</span> och <span style="color:blue;">&lt;/strong&gt;</span>: Taggen används för starkt betonad text.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <strong>meningen</strong> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+					<p class="p1">
+						3. <span style="color:blue;">&lt;cite&gt;</span> och <span style="color:blue;">&lt;/cite&gt;</span>: Taggen används för titlar på verk.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <cite>meningen</cite> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+			    </section>
+				<section>
+					<p class="p1">
+						4. <span style="color:blue;">&lt;q&gt;</span> och <span style="color:blue;">&lt;/q&gt;</span>: Taggen används för citat.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <q>meningen</q> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+					<p class="p1">
+						5. <span style="color:blue;">&lt;dfn&gt;</span> och <span style="color:blue;">&lt;/dfn&gt;</span>: Taggen används för definitioner.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <dfn>meningen</dfn> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+			    </section>
+				<section>
+					<p class="p1">
+						6. <span style="color:blue;">&lt;kbd&gt;</span> och <span style="color:blue;">&lt;/kbd&gt;</span>: Taggen används för att markera text som användaren ska skriva.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <kbd>meningen</kbd> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+					<p class="p1">
+						7. <span style="color:blue;">&lt;samp&gt;</span> och <span style="color:blue;">&lt;/samp&gt;</span>: Taggen används för exempel.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <samp>meningen</samp> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+			    </section>
+<section>
+					<p class="p1">
+						8. <span style="color:blue;">&lt;code&gt;</span> och <span style="color:blue;">&lt;/code&gt;</span>: Taggen används för att markera text som användaren ska skriva.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <code>meningen</code> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+					<p class="p1">
+						9. <span style="color:blue;">&lt;var&gt;</span> och <span style="color:blue;">&lt;/var&gt;</span>: Taggen används för exempel.<br> Exempel:
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det är inte själva meningen utan <var>meningen</var> med meningen jag menar.</p>
+						</code></pre>
+					</p>
+			    </section>
+
+			</section>
+
+				
+
+				<!--Hyperlänkar -->
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<section>
+						<h3>Hyperlänkar</h3>
+						<p class="p1">
+							I HTML, skapar man en fyperlänkar, alltså en länk som man till exempel kan klicka på för att komma till en annan resurs,  med taggen &lt;a&gt;, som är en förkortning av "ankare". Ett ankare kan vara antingen ett huvud eller svans i en länk. Det vanligaste är att det är en svans, men om man vill kunna hoppa till en viss del av ett stort dokument kan använda ett ankare för att märka ut länkhuvudet, alltså platsen man vill hoppa till.
+						</p>
+					</section>
+					<section>
+							<p class="p1">
+								Man använder attribut för att skilja mellan de olika typerna av ankare. Om ankaret utgör huvud i länkar ger man ankaret ett namn med attributet name eller id, och om det är en svans använder man attributet href och ger attributet ett värde som berättar vart länken leder. 
+							</p>
+					</section>
+					<section>
+						<h3>Ett exempel</h3>
+						<p class="p1">
+							I nedanstående eexempel är det första ankaret svansen i länken och det andra är länkens huvud:
+						</p>
+						<pre><code class="hljs" style="word-wrap: break-word;">
+						
+<h1>Exempel på en länk</h1>
+<p>I nästa mening är de första två orden en hyperlänk. <a href="#del2">Klicka här</a> om du vill hoppa fram till nästa del av detta dokument</p><br><br>
+						
+<h2 id="del2">Del två</h2>
+<p>På det här sättet kan man till exempel ha en innehållsförteckning i början av långa dokument.</p>
+
+						</code></pre>
+					</section>
+				</section>
+
+
+				
+				<!--Bilder -->
+				<section>
+					<section>
+						<h3>Bilder</h3>
+						<p class="">
+							Man länkar in bilder med taggen &lt;img/&gt;, som bland annat har attributen src som anger bildfilens URL, alt som anger en text som visas om bilden inte kan eller får laddas in och align som anger hur bilden ska placeras i förhållande till text på sidan.
+						</p>
+					</section>
+					<section>
+						<p>
+							De tre vanligaste formaten heter PNG, JPEG och GIF. PNG är bäst för bilder som har få färger och stora fält med samma nyans. JPEG är bäst för fotorealistiska bilder med många färger. GIF är föråldrat, men är det enda av formaten som har utbrett stöd för animationer. 
+						</p>
+					</section>
+					<section>
+						<h3>height och width</h3>
+						<p>
+							Dessa attribut används för att ange hur hög respektive bred bilden är, mätt i bildpunkter eller i förhållande till webbläsarens fönsterstorlek.
+							 
+						</p>
+					</section>
+					<section>
+						<p class="p1">Taggen &lt;img/&gt; kan ha fyra attribut:</p>
+						<ol>
+							<li>src: En URL till resursen som ska läggas in på sidan.</li>
+							<li>type: Resursens MIME-typ</li>
+							<li>width: Elementets bredd</li>
+							<li>height: Elementets höjd</li>
+						</ol>
+					</section>
+					<section data-markdown>
+							<script type="text/template">
+								### Exempel
+								```
+								<!doctype html>
+								<html>
+								<head>
+								<titel>Länkar in bilder</titel>
+								</head>
+								<body>
+									<h3>Bilder, ett exempel</h3>
+									<img srs="imag.png"  alt="IMG"  height="200"  width="200" />
+									
+								</body>
+								</html>
+								
+								```
+							</script>
+					</section>
+					<section data-markdown>
+							<script type="text/template">
+								### Bilder som länkar
+								Ett bra sätt att få en webbsida att se bättre ut är att ha länkar i form av "knappar". alltså bilder som det går att klicka på. Det är inte svårt , allt du behöver göra är att lägga en bild i ett ankare. Om du till exempel har en bild med namnet hem.png som föreställer en knapp med texten "till startsidan" kan du lägga in den så här:
+								```
+								
+									<a href="index.html">
+										<img src="hem.png"  alt="Tillstartsidan />"
+									</a>
+								
+								```
+							</script>
+					</section>
+					<section>
+						<h3>&lt;figure&gt; och &lt;figcaption&gt;</h3>
+						<p class="p1">
+							man vill ofta skriva texter som beskriver bilder, och HTML5 tillkom två nya taggar som ger möjlight att koppla texter till båda bilder och annat innehåll. I vetenskapliga dokument använder man ofta ordet figur för att hänvisa till en bild eller illustration, så &lt;figure&gt; är lätt att komma ihåg. &lt;figcaption&gt; är en sammandragning av figure caption, alltså bildtext eller figurtext på engelska. Här är ett exempel som visar hur man använder taggarna:
+						</p>
+					</section>
+					<section>
+						<pre><code class="hljs" style="word-wrap: break-word;">
+						
+<p>Man kan ha flera bilder i samma figur:</p>
+<figure>
+	<img src="img1.png" alt="IMG"/>
+	<img src="img2.png" alt="IMG"/>
+	<figcaption>Några exempelbilder</figcaption>
+</figure>
+<p>Här får bilderna en gemensam bildtext.</p>
+
+						</code></pre>
+					</section>
+				</section>
+
+				
+				<!--Taggarna-->
+				<section>
+					<section>
+						<h3>Taggarna</h3>
+						<p class="p1">
+							<ul>
+								<li>&lt;header&gt;, som märker ut rubrikdelen i ett dokument eller en artikel i ett dokument.</li>
+								<li>&lt;footer&gt;, som märker ut sidfötter.</li>
+						    </ul>
+						</p>
+						<p class="p1">Exempel:</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<html><body>
+<header>
+	<h1>Forum för färgblinda</h1>
+</header>
+	<p>Här ska själva innehållet vara.</p>
+<footer>
+	<p>Copyright &cop; ROlf2011</p>
+</footer>
+</body></html>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;nav&gt;, som man använda till navigeringsdelar på sidor, delar med länkar till andra sidor.</li>
+						    </ul>
+						</p>
+						<p class="p1">Exempel:</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<html><body>
+<header>
+	<h1>Forum för färgblinda</h1>
+	<nav>
+	<p>
+		<a href="/">Hem</a>
+		<a href="/groups">Grupper</a>
+	</p>
+	</nav>
+</header>
+</body></html>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;adress&gt;, för adressinformation.</li>
+						    </ul>
+						</p>
+						<p class="p1">Exempel:</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<html><body>
+<header>
+	<h1>Forum för färgblinda</h1>
+</header>
+<footer>
+	<address>
+		<a href="mailto:info@exampel.se">Kontakta oss</a>
+	</address>
+	<p>Copyright &copy; Rolf 2011</p>
+</footer>
+</body></html>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;div&gt;, använder för att markera ett antal hela rubriker, stycken och liknande.</li>
+								<li>&lt;span&gt;, gör samma sak &lt;div&gt;, alltså ingenting, men &lt;span&gt; används för att avgränsa delar av ett stycke, en rubrik eller liknade.</li>
+						    </ul>
+						</p>
+						<p class="p1">Exempel:</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<html><body>
+<h1>Div och Span</h1>
+<div>Testa dig själv. <span style="color="red;""> ÄR ditt färgseende normalt?</span> </div>
+</body></html>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;section&gt;, som märker ut delar av sidor.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<section>
+	<h3>Testa dig själv</h3>
+	<p>ÄR ditt färgseende normalt?</p>
+	<h3>Vill du bli polis?</h3>
+	<p>Läsa mer om polisens krav på färgseende.</p>
+</section>
+<section>
+<p>Här ska själva innehållet vara.</p>
+</section>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;article&gt;, för artiklar eller andra fristående texter på en webbsida.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel:</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<section>
+	<article>
+		<h2>Vadå färgblind?</h2>
+		<p>Jag var 13 år gammal när jag fick veta att jag var ,,,,,,</p>
+		<article>
+			<h2>Håller med</h2>
+			<p>Preccis så är det för mig också!</p>
+		</article>
+		<article>
+			<h2>Fiskbullar</h2>
+			<p>Snabb leverans, diskret avsändare.</p>
+		</article>
+	</article>
+</section>
+<section>
+<p>Här ska själva innehållet vara.</p>
+</section>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+							  <li>&lt;aside&gt;, som ger faktarutor och liknande.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<article>
+	<aside>
+		<img src="img" />
+		<p>Författare: Rolf</p>
+		<p>2011-07-31  17:16</p>
+	</aside>
+	<h2>Vadå färgblind?</h2>
+</article>
+
+						</code></pre>
+				</section>
+				<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;hgroup&gt;, som används för att gruppera flera rubriker.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<article>
+	<hgroup>
+		<h2>Vadå färgblinda?</h2>
+		<h4>Ett besök hos skolsyster</h4>
+	</hgroup>
+	<aside>
+	[...]
+</article>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;time&gt;, för att ange tidpunkter.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+En tanke med taggen är att webbläsare ska kunna visa till exempel klockslag i det lokala formatet, så
+<time>19:00</time>
+Man kan också ange en tidpunkt med attributet datetame:
+<time datetime="2011-08-11">Nästa torsdag</time>
+Vill man ha med både datum och tid skriver man ett T mellan dem, och på slutet kan man skriva in en tidszon om man vill:
+<time datetime="2011-07-11T20:17:39z">11 juli 2011</time>
+Man kan också använda <time> för att ange när ett dokument eller en artikel i ett dokument tär publicerat. >Då lägger man till attributet pubdate. Attributet ska inte ha något värde. Så här tillexempel:
+<article>
+	<heading>
+		<time pubdate time="2010-12-24"></time>
+		<h1>Årets julklappsskörd</h1>
+	</heading>
+</article>
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;sub&gt;, som ger nedsänkt och förminskaad text.</li>
+								<li>&lt;sup&gt;, som ger upphöjd och förminskaad text.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Formler som H<sub>2</sub>o och X<sup>2</sup> är lätta att skriva.</p>
+
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;ins&gt;, som markerar nyinsatt text.</li>
+								<li>&lt;del&gt;, som markerar borttagen text.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Om du ändrar i långa dokument kan det vara bra att markera <ins cite="kommentarer.html">nyinsatt text</ins> och <del datetime="2001-08-10T08:41:00z">borttagen text</del></p>
+
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;pre&gt;, som används till förformaterad text.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det här är Duff's Device, ett snabbt sätt att kopiera data i c:</p>
+<pre><code>
+	int n = (count +7) / 8;* count &gt; 0 */
+	switch (count %8)
+	{
+		case 0: do {  *to = *form++;
+			 7: do    *to = *form++;
+			 6: do    *to = *form++;
+			 5: do    *to = *form++;
+			 4: do    *to = *form++;
+			 3: do    *to = *form++;
+			 2: do    *to = *form++;
+			 1: do    *to = *form++;
+			 			} while (--n &gt; 0)
+	}
+</code></pre>
+
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;i&gt;, som kursiverar text.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Så här <i>kursiv</i> text ut</p>
+
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;b&gt;, som ger text med fetstill.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p><b>Taggen kan till exempel användas för att märka ut den första meningen i en artikel.</b> Annars bör taggen bara användas som en sista utväg om det inte finns någon annan tagg att tillgå.</p>
+
+						</code></pre>
+						
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;u&gt;, som ger understruken text.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Det sista ordet i denna mening är <u>understrukket</u></p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;s&gt;, som ger genomstruken text.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Taggen ger <s>genomstruken text</s>.</p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;smal&gt;, som gör markerad text mindre.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Taggen kan till exempel användas för att märka ut den första meningen i en artikel.<small> Annars bör taggen bara användas som en sista utväg om det inte finns någon annan tagg att tillgå.</small></p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;abbr&gt;, som används till förkortningar.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Kommer du ihåg vad <abbr title="Cascading Style Sheets">CSS</abbr>betyder?</p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;br&gt;, som ger ett radbrott utan att påbörja nytt stycke.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Taggen kan till exempel användas för att märka ut den första meningen i en artikel.<br> Annars bör taggen bara användas som en sista utväg om det inte finns någon annan tagg att tillgå.</p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;mark&gt;, Taggen används när du vill att någon del av texten ska synas extra</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Taggen kan till exempel användas för att märka ut den första meningen i en artikel.<mark> Annars bör taggen bara användas som en sista utväg om det inte finns någon annan tagg att tillgå</mark></p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;!-- --&gt;, som används till kommentarer.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Taggen kan till exempel användas för att märka ut den första meningen i en artikel.<!--Annars bör taggen bara användas som en sista utväg om det inte finns någon annan tagg att tillgå -->.</p>
+						</code></pre>
+					</section>
+					<section>
+						<p class="p1">
+							<ul>
+								<li>&lt;ruby&gt;, &lt;rt&gt; och &lt;rp&gt; som används för ruby-noteringar.</li>
+							</ul>
+						</p>
+						<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Skriver man en bok om
+	<ruby>
+		HTML
+		<rt>Hypertext Markup Language</rt>
+	</ruby>
+	lär man sig mycket annat på köpet.
+</p>
+						</code></pre>
+					</section>
+				</section>
+
+				
+							
+			<!--Listor och tabeller-->
+			<section>
+				<section>
+					<h2>Listor och tabeller</h2>
+					<p class="p1">Listor:</p>
+					<ul>
+						<li>Oordnade listor: är vanligast. DE används för listor där ordningen inte är så viktig. De taggas med &lt;ul&gt;. </li>
+					</ul>
+					<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Oordnade listor: är vanligast. DE används för listor där ordningen inte är så viktig. De taggas med &lt;ul&gt;.</p>
+<ul>
+	<li>Namn:</li>
+	<li>Adress:</li>
+	<li>MObil:</li>
+</ul>
+						</code></pre>
+				</section>
+				<section>
+					<ul>
+						<li>Ordnade listor: får ett nummer före varje element. Tagg: &lt;ol&gt;. </li>
+					</ul>
+					<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<p>Ordnade listor: får ett nummer före varje element. Tagg: &lt;ol&gt;. </p>
+<ol>
+	<li>Namn:</li>
+	<li>Adress:</li>
+	<li>MObil:</li>
+</ol>
+						</code></pre>
+					
+				</section>
+				<section>
+					<ul>
+						<li>Definitionlistor: är listor där man till exempel kan skriva termer och förklaringar av dem. Listorna angens med &lt;dl&gt;. Man använder taggen &lt;dl&gt;för att skapa en definitionlista. Sedan markerar ma varje term som ska definieras med &lt;dt&gt; och alla definitioner med &lt;dd&gt; </li>
+					</ul>
+					<p class="p1">Exempel</p>
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<h1>Grekiska läckerheter</h1>
+<dl>
+	<dt>Souvlaki</dt>
+		<dd>Grillspett</dd>
+	<dt>Mossaka</dt>
+		<dd>Aubrggine, köttfärs och potatis som bakas i ugn.</dd>
+</dl>
+						</code></pre>
+					
+				</section>
+				<section>
+					<ul>
+						<li>Menyer: är listor med ett element per rad. Tagg: &lt;menu&gt;. </li>
+					</ul>
+					<p class="p1">Exempel</p>
+						
+						<pre><code class="hljs" style="word-wrap: break-word;">
+<menu>
+	<li><a href="/">Hem</a></li>
+	<li><a href="#kap1">Kapitel 1</a></li>
+	<li><a href="#kap2">Kapitel 2</a></li>
+</menu>
+						</code></pre>
+					
+				</section>
+				<section>
+					<p class="p1"> Inom alla listor utom definitionslistor märker man ut varje element med taggen &lt;li&gt;. I definitionslistor märker man ut termerna med &lt;dt&gt; och definitionen med &lt;dd&gt;. </p>	
+				</section>
+				<section>
+					<p>Tabeller</p>
+					<p class="p1">
+						Tabeller innehåller en eller flera rader, som märks ut med &lt;tr&gt;. Raderna innehåller i sin tur rubrikceller som märkes ut med &lt;th&gt; och dataceller som anges med &lt;td&gt;. En tabell kan också innehålla en rubrik som anges med &lt;caption&gt;.
+					</p>
+				</section>
+				<section>
+					<p class="p1">
+						Genom att använda attributen rowspan och colspan i  &lt;th&gt; och  &lt;td&gt; kan man få en cell att spänna över flera rader respektive kolumner i tabellen. Vill du att en datacell ska sträcka sig över två kolummer skriver du: <span style="color:red;">&lt;td colspan="2"&gt;...&lt;/th&gt;</span>. Attributet rowspan fungerar på samma sätt. Det går att kombinera båda attributen i samma celltagg om du vill ha en riktigt stor cell:<br><span style="color:red;">&lt;td rowspan="2" colspan="3"&gt;Den här rubrikcellen blir tre kolumner bred och två cellrader hög&lt;/th&gt;</span> .
+					</p>
+				</section>
+				<section>
+					<p class="p1">Exempel</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">
+<table>
+<caption>Tagger i tabeller</caption>
+<tr>
+	<th>Tagg</th>
+	<th>Innehåll</th>
+</tr>
+<tr>
+	<td> &lt;tabel&gt;</td>
+	<td>Hella tabellen</td>
+</tr>
+</table>
+						</code></pre>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Formulär i HTML</h2>
+					<P class="p1">
+						Formulär skapas med taggen &lt;form&gt;. I &lt;form&gt; anger man attributen action, som berättar vilken webbadress webbläsaren ska skicka resultatet till, metho, som berättar hur informationen ska skickas och enctype, som berättar hur informationen ska kodas. I formuläret kan man ange en mängd olika typer av objekt: 
+					</P>
+					<ul>
+						<li>Textfält: med &lt;input type="text"/&gt;</li>
+						<li>Fält med dold text: med &lt;input type="password"/&gt; </li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Sändknappar: med &lt;input type="submit"/&gt;</li>
+						<li>Återställningsknappar: med &lt;input type="reset"/&gt;</li>
+						<li>kryssrutor: med &lt;input type="checkbox"/&gt;</li>
+						<li>Radioknappar: med &lt;input type="radio"/&gt;</li>
+						<li>Dolda fält: med &lt;input type="hidden"/&gt;</li>
+						<li>Filer: med &lt;input type="file"/&gt;</li>
+						<li>Bilder: med &lt;input type="image"/&gt;</li>
+						<li>Stora textareor: med &lt;textarea&gt;</li>
+						<li>Listor: med &lt;select&gt; och &lt;option&gt;</li>
+						<li>Knappar: med &lt;button&gt;</li>
+					</ul>
+				</section>
+				<section>
+					<p class="p1">Exempel</p>
+					<pre><code class="hljs" style="word-wrap: break-word;">
+<form>
+	<p>Textfält: <input type="text" name="diagnos" value="prima"  size="20"/></p>
+	<p>Fält med dold text: <input type="password" name="kontroll" maxlength="8" size="8" /></p>
+	<p>Sändknappart: <input type="submit" name="knapp" value="ja" /></p>
+	<p>Återställningsknappar:</p>
+	<p><input name="svar"/></p>
+	<p><input type="submit" value="Skicka"/> <input type="reset"> /></p>
+	<p><input type="reset"> /></p>
+	<p>kryssrutor: <input type="checkbox" name="ikaffet" value="socker" />Socker</p>
+		        <p><input type="checkbox" name="ikaffet" value="salt" />Salt</p>
+	<p>Radioknappar: <input type="radio" name="blekmedel" value="mini" />Mini</p>
+					<p><input type="radio" name="blekmedel" value="maxi" />Maxi</p>
+	<p>Dolda fält: <input type="hidden" name="skostorlek" value="47"/></p>
+	<p>Filer: <input type="fil" name="fil" accept="text/html" /></p>
+	<p>Bilder: <input type="image" name="norden" id="norden" src="norden2.png" align="top"/></p>
+	<p>Stora textareor: <textarea name="texten" rows="5" cols="30">Skriva ditt namn här!</textarea></p>
+	<p>Listor: <select name="intresse" multiple="multiple" size="4"><option value="1">Mat och sömn</option> <option value="2">programmering</option></select></p>
+	<p>Knappar: <button type="button" name="ingenting">Klicka här</button></p>
+
+	
+	
+</form>
+
+					</code></pre>
+				</section>
+			</section>
+
+
+			<!-- ÖVNINGAR -->
+            <section>
+				<section>
+					<h2>ÖVNINGAR</h2>
+					<ul>
+						<li>Gör en webbsida somberättar om dina tre största intressen och varför du är intresserad av dem. Använda flera olika rubriknivåer och försöka ta med så många logiska formattaggar som möjligt.</li>
+						<li>Skapa två HTML -dokument som refererar till varndra (du kan skriva av fil1.html och fil2.html). Flytta sedan runt det ena dokumentet på din hårddisk och ändra länkarnas ankare efter varje flytt så att det går att hoppa mellan dokumenten.</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Gör en eller flera av bilderna i HTML -dokumentet till en länk och prova att följa länken genom att klicka på bilden.</li>
+						<li>Skriv ett HTML -dokument som innehåller alla formattagger vi gått igenom.</li>
+						<li>Skapa en oordnad lista med fem dina favoriträtter. Titta på den i din webbläsare. Gör om den till en ordnad lista och till en menyoch notera skillnaderna.</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Gör om listan till en definitionslista och skriv en kort förklaring till varje maträtt.</li>
+						<li>Skapa en tabell med rubriken "Test", med en enda data cell som har värdet "Hallå".</li>
+						<li>Skapa en enkät med fyra frågor. Använda olika formulärobjekt för alla frågor: radioknappar, kryssrutor, en lista där användaren kan välja flera alternativ.</li>
+					</ul>
+				</section>
+            </section>
+
+
+			<!-- RESURSER -->
+			<section>
+				<h2>RESURSER</h2>
+				<ul>
+					<li>HTML och CSS-boken, sjunde upplagen, av Rolf Staflin</li>
+					<li><a href="http://porkforge.mardby.se/index.php?title=Veckoplanering_Webbutveckling_frontend_(AJK15G)">http://porkforge.mardby.se/index.php?title=Veckoplanering_Webbutveckling_frontend_(AJK15G)</a></li>
+				</ul>
+
+			</section>
+
+				
+			<!-- Transition Styles -->
+				
+			<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+
+			</section>
+
+				
+			<!-- Themes -->
+			<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+			</section>
+				
+
+
+			<!-- Slut -->
+			<section>
+					<h1>Slut!</h1>
+			</section>
+			<p><img src="IMG/images.png" style="border-style:none; border-radius: 100px; position: relative; left:620px; bottom:-593px;"  class="img-circle" alt="Cinque Terre" width="80" height="80"></p>
+
+
+			</div>
+
+		</div>
+
+		<!---------------------------------->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
